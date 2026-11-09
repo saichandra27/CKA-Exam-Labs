@@ -1,0 +1,9 @@
+*.log
+*.tmp
+.env
+*.key
+*.pem
+kubeconfig
+admin.conf
+**/pki/
+**/secrets/
