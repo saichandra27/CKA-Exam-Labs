@@ -13,9 +13,7 @@ echo "=== IP FORWARDING ==="
 sudo sysctl -w net.ipv4.ip_forward=1
 
 echo "=== NETWORK ADMIN CAPABILITY ==="
-sudo ip link add cka-test type dummy \
-  && sudo ip link delete cka-test
+sudo ip link add cka-test type dummy && sudo ip link delete cka-test
 
 echo "=== CGROUP PERMISSION ==="
-sudo mkdir /sys/fs/cgroup/cka-test \
-  && sudo rmdir /sys/fs/cgroup/cka-test
+sudo mkdir /sys/fs/cgroup/cka-test && sudo rmdir /sys/fs/cgroup/cka-test
